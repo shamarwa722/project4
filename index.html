@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>موقع دعم نفسي واجتماعي</title> 
+                 <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">  <!-- Font Awesome --> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ================= Header & Navigation ================= -->
+    <header class="sticky-top bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light container">
+
+    <a class="navbar-brand fw-bold" href="#home">مساحة أمان</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+        <li class="nav-item"><a class="nav-link" href="#articles">مقالات</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">طلب دعم</a></li>
+      </ul>
+    </div>
+  </nav>
+</header><!-- ================= Home / Landing ================= -->
+<section id="home" class="hero text-center d-flex align-items-center">
+
+  <div class="container">
+    <h1 class="mb-3">أنت لست وحدك</h1>
+    <p class="mb-4">مساحة آمنة للدعم النفسي والاجتماعي بعد الأزمات</p>
+    <a href="#contact" class="btn btn-primary">اطلب دعم نفسي</a>
+   
+    </div>
+</section>  
+ 
+  <h2 class="text-center">فيديو توعوي</h2>
+  <video controls width="50%">
+    <source src="video/Support.mp4" >
+    <source src="video/Support.ogv" >
+    <source src="video/Support.webm" >
+  </video>
+</section>
+        <!-- ================= Services ================= -->
+  <section id="services" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">خدماتنا</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <i class="fa-solid fa-heart fa-3x mb-3"></i>
+        <h5>إرشاد اجتماعي</h5>
+        <p>نصائح للتواصل الصحي داخل الأسرة والمجتمع.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="fa-solid fa-hand-holding-heart fa-3x mb-3"></i>
+        <h5>طلب جلسة دعم</h5>
+        <p>إمكانية إرسال طلب لجلسة دعم نفسي.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- ================= Articles / Accordion ================= -->
+     <section id="articles" class="py-5 bg-light">
+     <div class="container">
+     <h2 class="text-center mb-4">مقالات دعم نفسي</h2>
+     <div class="accordion" id="articlesAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#a1">
+                ما هو الدعم النفسي الاجتماعي؟
+          </button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse show">
+          <div class="accordion-body">الدعم النفسي هو المساندة التي يتلقاها الفرد لمساعدته على التعامل مع مشاعره وأفكاره ومشكلاته اليومية بطريقة صحية. ويشمل الاستماع، التوجيه،
+            الإرشاد النفسي لتقوية الثقة بالنفس وتقليل القلق والتوتر.
+الدعم الاجتماعي يتعلق بالعلاقات الاجتماعية، مثل الأسرة، الأصدقاء، والزملاء، الذين يقدمون الحب والاحترام والمساندة العملية والعاطفية. هذه العلاقات تساعد على بناء شعور الانتماء وتوفير شبكة أمان اجتماعية تساعد على مواجهة الأزمات            ت
+               </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- ================= Contact Form ================= -->
+  <section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">طلب جلسة دعم</h2>
+    <form id="supportForm" class="col-md-6 mx-auto">
+      <input type="text" id="name" class="form-control mb-3" placeholder="الاسم الكامل">
+      <input type="email" id="email" class="form-control mb-3" placeholder="البريد الإلكتروني">
+      <textarea id="message" class="form-control mb-3" placeholder="اكتب ما تشعر به"></textarea>
+      <button type="submit" class="btn btn-success w-100">إرسال الطلب</button>
+      <p id="formMsg" class="text-center mt-3"></p>
+    </form>
+  </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+                       <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+                        <!-- jQuery -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+                        <!-- Custom JS -->
+  <scriptsrc="js/main.js"></script>
+</body>
+</html>

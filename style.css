@@ -1,0 +1,49 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Tahoma', sans-serif;
+}
+
+.hero {
+   background-image: url("image/hero.png");
+    background-size: cover;       /* يخليها تغطي كامل المساحة */
+    background-position: center;  /* يوسّط الصورة */
+    background-repeat: no-repeat;
+    height: 100vh;                /* ارتفاع الشاشة كامل */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.video-wrapper {
+  width: 50%;          
+  max-width: none;      
+  aspect-ratio: 16/9;    
+  margin: 20px auto;     
+  overflow: hidden;
+  border-radius: 8px;    
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+
+.video-wrapper iframe {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;  
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+i {
+  color: #0d6efd;
+  transition: transform 0.3s;
+}
+
+i:hover {
+  transform: scale(1.2);
+}
